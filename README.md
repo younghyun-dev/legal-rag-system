@@ -147,7 +147,7 @@ http://127.0.0.1:8000/docs
 
 ![Swagger Result](image/swagger-question.png)
 
-↓
+                        ↓
 
 ![Swagger Result](image/swagger-result.png)
 
