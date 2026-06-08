@@ -143,8 +143,26 @@ http://127.0.0.1:8000/docs
 
 ## 시연 화면
 
-Swagger UI를 통해 법률 질의응답 API를 테스트할 수 있습니다.
+### 법률 질의응답 결과
 
-AWS EC2 + Docker 환경에서 서비스를 배포하였습니다.
+![Swagger Result](image/swagger-question.png)
+↓
+![Swagger Result](image/swagger-result.png)
+
+사용자가 자연어로 질문을 입력하면 RAG 기반 문서 검색을 수행한 후, OpenAI GPT-4o-mini를 활용하여 답변을 생성합니다. 또한 답변과 함께 참고한 법률 문서명 및 페이지 정보를 제공하여 결과의 신뢰성을 높였습니다.
+
+### GPT-4o-mini 연동
+
+![GPT](image/GPT-4o-mini_code.png)
+
+검색된 법률 문서를 기반으로 사용자 친화적인 답변을 생성하기 위해 OpenAI GPT-4o-mini 모델을 연동하였습니다. 검색 결과를 단순히 반환하는 것이 아니라 이해하기 쉬운 형태로 재구성하여 제공합니다.
+
+### AWS EC2 배포
+
+![server](image/server.png)
+![docker](image/ubuntu_terminal.png)
+![AWS](image/AWS_FastAPI.png)
+
+Docker 컨테이너 기반으로 애플리케이션을 패키징한 후 AWS EC2 환경에 배포하였습니다. 공인 IP를 통해 외부에서도 FastAPI 서버에 접근할 수 있도록 구성하였습니다.
 
 ---
