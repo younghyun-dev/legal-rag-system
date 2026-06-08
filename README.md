@@ -1,7 +1,5 @@
 # Legal RAG System
 
-![Swagger Result](image/swagger-result.png)
-
 법률 PDF 문서를 기반으로 사용자의 질문에 답변하는 RAG(Retrieval-Augmented Generation) 기반 법률 질의응답 시스템입니다.
 
 ---
@@ -49,12 +47,6 @@
 
 * GitHub
 * Git
-
-## 🤖 GPT 연동
-
-![GPT](image/GPT-4o-mini_code.png)
-
-OpenAI GPT-4o-mini 모델을 활용하여 검색된 법률 문서를 기반으로 답변을 생성하였습니다.
 
 ---
 
@@ -106,13 +98,6 @@ GPT-4o-mini 답변 생성
 * Docker 컨테이너 배포
 * AWS EC2 환경 운영
 
-## ☁️ AWS 배포
-
-![AWS](image/AWS_FastAPI.png)
-
-Docker 컨테이너 기반으로 AWS EC2 환경에 배포하였으며,
-공인 IP를 통해 외부에서 API 접근이 가능하도록 구성하였습니다.
-
 ---
 
 ## 실행 방법
@@ -154,3 +139,12 @@ http://127.0.0.1:8000/docs
 * AWS EBS 볼륨 확장 (8GB → 30GB)
 * Docker 이미지 빌드 정상 수행
 
+---
+
+## 시연 화면
+
+Swagger UI를 통해 법률 질의응답 API를 테스트할 수 있습니다.
+
+AWS EC2 + Docker 환경에서 서비스를 배포하였습니다.
+
+---
