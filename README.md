@@ -2,6 +2,9 @@
 
 법률 PDF 문서를 기반으로 사용자의 질문에 답변하는 RAG(Retrieval-Augmented Generation) 기반 법률 질의응답 시스템입니다.
 
+[질문 → 답변 → 출처 화면]
+![시연화면](swagger-result.png)
+
 ---
 
 ## 프로젝트 소개
