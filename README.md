@@ -2,11 +2,15 @@
 
 법률 PDF 문서를 기반으로 사용자의 질문에 답변하는 RAG(Retrieval-Augmented Generation) 기반 법률 질의응답 시스템입니다.
 
+---
+
 ## 프로젝트 소개
 
 근로기준법, 개인정보보호법, 산업안전보건법 등 다양한 법률 PDF 문서를 검색하여 사용자 질문에 대한 답변을 제공합니다.
 
 단순 키워드 검색이 아닌 RAG(Retrieval-Augmented Generation)와 OpenAI GPT-4o-mini를 활용하여 자연어 기반의 답변을 생성합니다.
+
+---
 
 ## 주요 기능
 
@@ -17,7 +21,9 @@
 * 출처 문서 및 페이지 제공
 * AWS EC2 + Docker 배포
 
-## 기술 스택
+---
+
+## 🛠 기술 스택
 
 ### Backend
 
@@ -39,8 +45,50 @@
 
 ### Version Control
 
-* Git
 * GitHub
+* Git
+
+---
+
+## 📂 프로젝트 구조
+
+```text
+rag-project
+│
+├── app
+│   ├── main.py
+│   ├── graph.py
+│   ├── rag.py
+│   └── data
+│
+├── requirements.txt
+├── Dockerfile
+└── README.md
+```
+
+---
+
+## 시스템 동작 흐름
+
+사용자 질문 입력
+
+↓
+
+관련 법률 문서 검색 (RAG)
+
+↓
+
+관련 문서 추출
+
+↓
+
+GPT-4o-mini 답변 생성
+
+↓
+
+출처 문서 및 페이지 반환
+
+---
 
 ## 프로젝트 결과
 
@@ -49,6 +97,30 @@
 * GPT-4o-mini 기반 답변 생성
 * Docker 컨테이너 배포
 * AWS EC2 환경 운영
+
+---
+
+## 실행 방법
+
+### 패키지 설치
+
+```bash
+pip install -r requirements.txt
+```
+
+### 서버 실행
+
+```bash
+uvicorn app.main:app --reload
+```
+
+### Swagger 접속
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+---
 
 ## 트러블슈팅
 
@@ -66,3 +138,11 @@
 
 * AWS EBS 볼륨 확장 (8GB → 30GB)
 * Docker 이미지 빌드 정상 수행
+
+---
+
+## 📷 시연 화면
+
+Swagger UI를 통해 법률 질의응답 API를 테스트할 수 있습니다.
+
+AWS EC2 + Docker 환경에서 서비스를 배포하였습니다.
