@@ -23,7 +23,7 @@
 
 ---
 
-## 🛠 기술 스택
+## 기술 스택
 
 ### Backend
 
@@ -36,7 +36,6 @@
 * LangGraph
 * OpenAI GPT-4o-mini
 * HuggingFace Embeddings
-* FAISS
 
 ### Infra
 
@@ -161,6 +160,7 @@ http://127.0.0.1:8000/docs
 ![docker](image/ubuntu_terminal.png)
 ![AWS](image/AWS_FastAPI.png)
 
-Docker 컨테이너 기반으로 애플리케이션을 패키징한 후 AWS EC2 환경에 배포하였습니다. 공인 IP를 통해 외부에서도 FastAPI 서버에 접근할 수 있도록 구성하였습니다.
+Docker 컨테이너를 활용하여 법률 RAG 서비스를 AWS EC2 환경에 배포하였습니다.
+Uvicorn 서버 실행, Docker 컨테이너 운영, FastAPI 접속 화면을 통해 서비스가 정상적으로 배포, 운영되는 것을 확인할 수 있습니다. 또한 공인 IP를 통해 외부에서도 API에 접근할 수 있도록 구성하였습니다.
 
 ---
