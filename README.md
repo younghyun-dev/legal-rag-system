@@ -146,7 +146,9 @@ http://127.0.0.1:8000/docs
 ### 법률 질의응답 결과
 
 ![Swagger Result](image/swagger-question.png)
+
 ↓
+
 ![Swagger Result](image/swagger-result.png)
 
 사용자가 자연어로 질문을 입력하면 RAG 기반 문서 검색을 수행한 후, OpenAI GPT-4o-mini를 활용하여 답변을 생성합니다. 또한 답변과 함께 참고한 법률 문서명 및 페이지 정보를 제공하여 결과의 신뢰성을 높였습니다.
